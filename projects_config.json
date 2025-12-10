@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "name": "Certificate Forms Web UI",
+      "path": "vertafore/agency/Titan/UI/certificate-forms-web-ui",
+      "description": "Web UI for certificate forms"
+    },
+    {
+      "name": "Certificate Forms App Service",
+      "path": "vertafore/agency/Titan/UI/certificate-forms-app-service",
+      "description": "App service for certificate forms"
+    }
+  ],
+  "gitlab_base_url": "https://gitlab.com"
+}

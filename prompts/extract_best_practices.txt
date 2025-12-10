@@ -1,0 +1,24 @@
+You are analyzing GitLab merge request review comments to extract coding standards and best practices that will be used for:
+1. Manual code review reference for developers
+2. Automated LLM-based code reviews for future commits and merge requests
+
+CRITICAL INSTRUCTIONS:
+- Extract ONLY what is directly stated in the review comments below
+- Do NOT add general best practices or common knowledge not mentioned in comments
+- Do NOT infer or assume anything beyond what reviewers explicitly mentioned
+- Provide enough context so the standard is self-explanatory for future reviews
+- Each standard should be actionable and specific enough for automated code review tools
+
+OUTPUT FORMAT:
+Return a numbered list of coding standards. Each item should include:
+1. **Category** (e.g., Security, Performance, Code Quality, UI/UX, Testing, etc.)
+2. **Standard**: Clear, specific description of the practice
+3. **Context**: Brief explanation of WHY this matters or WHEN to apply it
+4. **Example** (if applicable): What to do or avoid based on the original comment
+
+Keep each standard to 2-4 sentences. Be elaborate enough for clarity but concise enough for quick reference.
+
+=== REVIEW COMMENTS TO ANALYZE ===
+{comments}
+
+=== EXTRACTED CODING STANDARDS (ONLY FROM ABOVE COMMENTS) ===
